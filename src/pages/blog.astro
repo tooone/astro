@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+const pageTitle = "我的博客"
 ---
 
 <Layout title="Welcome to Astro.">
@@ -36,26 +37,26 @@ import Card from '../components/Card.astro';
 		<h1>欢迎来到 <span class="text-gradient">Little Baby </span>育儿知识库</h1>
         <a href="/">Home</a>
         <a href="/about/">关于</a>
-        <a href="/blog/">我的 Blog</a>
+        <a href="/blog/">{pageTitle}</a>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+				href="/posts/post-1/"
+				title="我的第一篇博客"
+				body="这是我的第一篇博客文章"
 			/>
 			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+				href="/posts/post-2/"
+				title="我的第二篇博客"
+				body="学习了一些 Astro 后，我根本停不下来！"
 			/>
 			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
+				href="/posts/post-3/"
+				title="我的第三篇博客"
+				body="我遇到了一些问题，但是在社区里面提问真的很有帮助！"
 			/>
 			<Card
 				href="https://astro.build/chat/"
